@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+.main {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  height: 300vh;
+  width: 100vw;
+  background-size: cover;
+}
+.image {
+  height: 500px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  height: 100vh;
+  width: 500px;
+}
+.random-image{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  margin-top: 10px;
+  height: 50vh;
+}
+.random-image-select{
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.main-70{
+  height: 200vh;
+}
+.ul{
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
+.play-again-button{
+  background-color: blueviolet;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.Header {
+  background-color: #2c0e3a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20vh;
+}
+.score {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.timer-icon {
+  height: 20px;
+  width: 20px;
+  margin-top: 15px;
+}
+.logo-icon {
+  height: 100px;
+  width: 150px;
+}
+.image-random {
+  height: 500px;
+  width: 500px;   
+  
+}
+.play-again {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: black;
+   font-size: 40px;
+   height: 200vh;
+}
+.all-images{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw ;
+}
+.main-play-again {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  height: 300vh;
+  width: 100vw;
+  background-size: cover;
+}
+.sub-play{
+  display: flex;
+  flex-direction: row;
+}
