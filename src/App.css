@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+ 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,7 +14,13 @@ body {
 }
 .main {
   background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
-  height: 300vh;
+  height: 350vh;
+  width: 100vw;
+  background-size: cover;
+}
+.main-duplicate {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  height: 100vh;
   width: 100vw;
   background-size: cover;
 }
@@ -51,7 +58,8 @@ body {
 .play-again-button{
   background-color: blueviolet;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 15px;
+   
 }
 
 .Header {
@@ -82,16 +90,27 @@ body {
   
 }
 .play-again {
-  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png');
   background-size: cover;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   color: black;
-   font-size: 40px;
-   height: 200vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+ min-width: 80vw;
+  
 }
+.tag{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.trophy{
+  height: 20vh;
+  width: 30vw;
+}
+
 .all-images{
   display: flex;
   flex-direction: row;
@@ -109,4 +128,15 @@ body {
 .sub-play{
   display: flex;
   flex-direction: row;
+}
+@media(min-width:800px){
+  .play-again{
+    height: 200vh;
+  }
+  .trophy{
+    height: 40vh;
+  }
+  .main-duplicate{
+    height: 300vh;
+  }
 }

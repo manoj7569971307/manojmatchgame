@@ -8,3 +8,7 @@
     background-size: cover;
     color: white;
 }
+/*<img className='trophy' src='https://assets.ccbp.in/frontend/react-js/match-game-trophy.png'/>
+              <h1>your score</h1>
+              <h1>{score} </h1>
+              <button className='play-again-button' onClick={this.onRefresh }>PlayAgain</button>*/

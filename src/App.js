@@ -9,6 +9,7 @@ const tabsList = [
   {tabId: 'ANIMAL', displayText: 'Animals'},
   {tabId: 'PLACE', displayText: 'Places'},
 ]
+console.log('hello')
 const imagesList = [
   {
     id: 'b11ec8ce-35c9-4d67-a7f7-07516d0d8186',
@@ -316,14 +317,39 @@ class App extends Component {
     return (
       <>
         {counter === 0 ? (
-          <div className="main">
-            <div className="play-again">
-            
-              <h1>{score} </h1>
-              <button className='play-again-button' onClick={this.onRefresh }>PlayAgain</button>
+          <div className="main-duplicate">
+            <div className="Header">
+                <img
+                  className="logo-icon"
+                  src="https://assets.ccbp.in/frontend/react-js/match-game-website-logo.png"
+                />
+                <div className="score">
+                  <p>score </p>&nbsp;
+                  <p>{score} </p>&nbsp;
+                  <img
+                    className="timer-icon"
+                    src="https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png"
+                  />
+                  &nbsp;
+                  <p>{counter} </p>&nbsp;
+                  <p> sec</p>&nbsp;
+                </div>
               
             </div>
-          </div>
+            
+            <div className='tag'>
+            <div className="play-again">
+            <img className='trophy' src='https://assets.ccbp.in/frontend/react-js/match-game-trophy.png'/>
+            <h1 >your score <br/>{score} </h1>
+            <button className='play-again-button' onClick={this.onRefresh }>PlayAgain</button>
+            
+            </div>
+            </div>
+             
+               
+              </div> 
+        
+             
         ) : (
           <div className="main">
              
